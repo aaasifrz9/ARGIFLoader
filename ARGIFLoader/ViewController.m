@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ARGIFLoader.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [ARGIFLoader setLoaderImage:[UIImage imageNamed:@"Loader"] imageSizeInPercentageOfDeviceWidth:0.25f];
+    [ARGIFLoader showLoaderWithOverlay];
+    
+    [self performSelector:@selector(hideLoader) withObject:nil afterDelay:20.0];
 }
 
+-(void)hideLoader{
+    [ARGIFLoader hideLoader];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

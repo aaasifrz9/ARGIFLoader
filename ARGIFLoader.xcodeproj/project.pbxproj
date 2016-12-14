@@ -15,6 +15,7 @@
 		B7FE4CD41DE7E77200639F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FE4CD21DE7E77200639F88 /* LaunchScreen.storyboard */; };
 		B7FE4CDF1DE7E77200639F88 /* ARGIFLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FE4CDE1DE7E77200639F88 /* ARGIFLoaderTests.m */; };
 		B7FE4CEA1DE7E77200639F88 /* ARGIFLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FE4CE91DE7E77200639F88 /* ARGIFLoaderUITests.m */; };
+		B7FE4CFD1DE7E98000639F88 /* ARGIFLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FE4CFC1DE7E98000639F88 /* ARGIFLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B7FE4CE51DE7E77200639F88 /* ARGIFLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARGIFLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FE4CE91DE7E77200639F88 /* ARGIFLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARGIFLoaderUITests.m; sourceTree = "<group>"; };
 		B7FE4CEB1DE7E77200639F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FE4CFB1DE7E98000639F88 /* ARGIFLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARGIFLoader.h; path = ARGIFLoader/ARGIFLoader.h; sourceTree = "<group>"; };
+		B7FE4CFC1DE7E98000639F88 /* ARGIFLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARGIFLoader.m; path = ARGIFLoader/ARGIFLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		B7FE4CC31DE7E77200639F88 /* ARGIFLoader */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE4CF71DE7E79E00639F88 /* ARGIFLoader */,
 				B7FE4CC71DE7E77200639F88 /* AppDelegate.h */,
 				B7FE4CC81DE7E77200639F88 /* AppDelegate.m */,
 				B7FE4CCA1DE7E77200639F88 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				B7FE4CEB1DE7E77200639F88 /* Info.plist */,
 			);
 			path = ARGIFLoaderUITests;
+			sourceTree = "<group>";
+		};
+		B7FE4CF71DE7E79E00639F88 /* ARGIFLoader */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE4CFB1DE7E98000639F88 /* ARGIFLoader.h */,
+				B7FE4CFC1DE7E98000639F88 /* ARGIFLoader.m */,
+			);
+			name = ARGIFLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FE4CFD1DE7E98000639F88 /* ARGIFLoader.m in Sources */,
 				B7FE4CCC1DE7E77200639F88 /* ViewController.m in Sources */,
 				B7FE4CC91DE7E77200639F88 /* AppDelegate.m in Sources */,
 				B7FE4CC61DE7E77200639F88 /* main.m in Sources */,
